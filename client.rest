@@ -18,9 +18,7 @@ Content-Type: application/json
 {
   "texto": "oiiiii tudo bem?",
   "de": "rafa",
-  "para": "aroldo",
-  "lido": false,
-  "data": "2025-07-18T01:12:05.752Z"
+  "para": "aroldo" 
 }
 
 ### Patch
@@ -30,9 +28,7 @@ Content-Type: application/json
 {
   "texto": "ATUALIZAR teste",
   "de": "hehehehehe",
-  "para": "hjvbsdjha",
-  "lido": true,
-  "data": "2025-07-23T15:50:58.233Z"
+  "para": "hjvbsdjha"
 }
 
 ### Delete

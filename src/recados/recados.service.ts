@@ -5,7 +5,7 @@ import { Recado } from './entities/recado.entity';
 
 @Injectable()
 export class RecadosService {
-  private lastId = 1;
+  private lastId: number = 1;
   private recados: Recado[] = [
     {
       id: 1,
@@ -23,7 +23,7 @@ export class RecadosService {
   }
 
   findOne(id: number) {
-    const recado = this.recados.find((rec) => rec.id === +id);
+    const recado = this.recados.find((rec) => rec.id === id);
 
     if (recado) return recado;
 
@@ -45,7 +45,7 @@ export class RecadosService {
 
   update(id: number, updateRecadoDto: UpdateRecadoDto) {
     console.log(id);
-    const recadoExisteIndex = this.recados.findIndex((item) => item.id === +id);
+    const recadoExisteIndex = this.recados.findIndex((item) => item.id === id);
     console.log(recadoExisteIndex);
 
     if (recadoExisteIndex >= 0) {
@@ -61,9 +61,7 @@ export class RecadosService {
   }
 
   remove(id: number) {
-    console.log(id);
-    const recadoExisteIndex = this.recados.findIndex((item) => item.id === +id);
-    console.log(recadoExisteIndex);
+    const recadoExisteIndex = this.recados.findIndex((item) => item.id === id);
 
     if (recadoExisteIndex >= 0) {
       this.recados.splice(recadoExisteIndex, 1);
