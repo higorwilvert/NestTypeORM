@@ -24,13 +24,15 @@ Content-Type: application/json
 }
 
 ### Patch
-PATCH  {{baseUrl}}/recados/2
+PATCH  {{baseUrl}}/recados/3
 Content-Type: application/json
 
 {
-  "recado": "teste",
-  "teste": "hehehehehe",
-  "conteudo": "isso é um conteudo"
+  "texto": "ATUALIZAR teste",
+  "de": "hehehehehe",
+  "para": "hjvbsdjha",
+  "lido": true,
+  "data": "2025-07-23T15:50:58.233Z"
 }
 
 ### Delete
