@@ -6,7 +6,7 @@
 GET {{baseUrl}}/recados
 
 ### Recados unique
-GET {{baseUrl}}/recados/1
+GET {{baseUrl}}/recados/5
 
 ### Recados usanso query parameters
 GET {{baseUrl}}/recados/usandoQuery/?try=10&user=teste&offset=100

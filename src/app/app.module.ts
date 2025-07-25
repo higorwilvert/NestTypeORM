@@ -14,7 +14,7 @@ import { AppService } from './app.service';
       database: 'postgres',
       password: 'postgres',
       autoLoadEntities: true, // Carrega Entiades sem precisar especificar elas
-      synchronize: true,
+      synchronize: true, // Isso não deve ser usado em prod, apenas local
     }),
     RecadosModule,
   ],
